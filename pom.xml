@@ -14,22 +14,20 @@
         <vaadin.version>8.0.0.alpha2</vaadin.version>
         <vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
     </properties>
+	
 	<distributionManagement>
-		
-   <snapshotRepository>
-	   <!--
-      <id>nexus-snapshots</id>
-      <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
-   </snapshotRepository>
-    -->
-   <repository>
+		<repository>
             <id>tomcat7-snapshots</id>
             <url>http://192.168.32.20:9090/webapp/</url>
         </repository>
-		
+		<!--
+		<snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+   </snapshotRepository>
+    -->		
 </distributionManagement>
 	
-
     <repositories>
         <repository>
             <id>vaadin-prereleases</id>
