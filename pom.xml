@@ -18,7 +18,7 @@
 	<distributionManagement>
 		<repository>
             <id>tomcat7-snapshots</id>
-		<url>/home/vagrant/artifacts/</url>
+		<url>https://oss.sonatype.org/content/repositories/vaadin-snapshots/com/vaadin/addon/</url>
         </repository>
 		<!--
 		<snapshotRepository>
