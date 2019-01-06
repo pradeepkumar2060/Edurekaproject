@@ -17,10 +17,15 @@
 	<distributionManagement>
 		
    <snapshotRepository>
-      <id>tomcat7-snapshots</id>
-      <url>http://192.168.32.20:9090/webapp/</url>
+	   <!--
+      <id>nexus-snapshots</id>
+      <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
    </snapshotRepository>
-    
+    -->
+   <repository>
+            <id>tomcat7-snapshots</id>
+            <url>http://192.168.32.20:9090/webapp/</url>
+        </repository>
 		
 </distributionManagement>
 	
