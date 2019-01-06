@@ -17,7 +17,7 @@
 	
 	<distributionManagement>
 		<repository>
-            <id>tomcat7-snapshots</id>
+            <id>vaadin-snapshots</id>
 		<url>https://oss.sonatype.org/content/repositories/vaadin-snapshots/com/vaadin/addon/</url>
         </repository>
 		<!--
