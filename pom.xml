@@ -15,19 +15,18 @@
         <vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
     </properties>
 	
-	<distributionManagement>
-
-	<repository>
-        <id>maven-deploy</id>
-      <url>http://192.168.32.10:8081/repository/maven-deploy/</url>
-        </repository>
-<!--
-<snapshotRepository>
+<distributionManagement>
+    <snapshotRepository>
       <id>nexus-snapshots</id>
-      <url>http://192.168.32.10:8081/nexus/content/repositories/snapshots</url>
-  </snapshotRepository>
+      <url>http://your-host:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+	<!--
+    <repository>
+      <id>nexus-releases</id>
+      <url>http://your-host:8081/repository/maven-releases/</url>
+    </repository>
     -->
-</distributionManagement>
+  </distributionManagement>
 	
     <repositories>
         <repository>
