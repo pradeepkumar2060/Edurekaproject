@@ -19,7 +19,7 @@
 
 	<repository>
         <id>maven-snapshots</id>
-      <url>http://192.168.32.10:8081/repository/maven-snapshots/</url>
+      <url>http://192.168.32.10:8081/repository/maven-deploy/</url>
         </repository>
 
 <snapshotRepository>
