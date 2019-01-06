@@ -24,7 +24,7 @@
 -->
 <snapshotRepository>
       <id>maven-snapshots</id>
-      <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+      <url>http://192.168.32.10:8081/nexus/content/repositories/snapshots</url>
   </snapshotRepository>
     
 </distributionManagement>
@@ -223,25 +223,20 @@
    </executions>
    <configuration>
       <serverId>nexus</serverId>
-      <nexusUrl>http://localhost:8081/nexus/</nexusUrl>
+      <nexusUrl>http://192.168.32.10:8081/nexus/</nexusUrl>
       <skipStaging>true</skipStaging>
    </configuration>
 </plugin>	
 		
 <!-- deploye -->
 <plugin>
+   <groupId>org.apache.maven.plugins</groupId>
    <artifactId>maven-deploy-plugin</artifactId>
-   <version>2.7</version>
-   <executions>
-      <execution>
-         <id>default-deploy</id>
-         <phase>deploy</phase>
-         <goals>
-            <goal>deploy</goal>
-         </goals>
-      </execution>
-   </executions>
-	</plugin>
+   <version>${maven-deploy-plugin.version}</version>
+   <configuration>
+      <skip>true</skip>
+   </configuration>
+   </plugin>
 		<!-- tomcat7 plugins -->
 		<plugin>
       <groupId>org.apache.tomcat.maven</groupId>
