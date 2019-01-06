@@ -16,14 +16,14 @@
     </properties>
 	
 	<distributionManagement>
-	<!--
-		<repository>
-            <id>vaadin-snapshots</id>
-		<url>https://oss.sonatype.org/content/repositories/vaadin-snapshots/com/vaadin/addon/</url>
+
+	<repository>
+        <id>maven-repository</id>
+      <url>http://192.168.32.10:8081/nexus/content/repositories/snapshots</url>
         </repository>
--->
+
 <snapshotRepository>
-      <id>maven-snapshots</id>
+      <id>nexus-snapshots</id>
       <url>http://192.168.32.10:8081/nexus/content/repositories/snapshots</url>
   </snapshotRepository>
     
