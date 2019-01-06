@@ -18,15 +18,15 @@
 	<distributionManagement>
 
 	<repository>
-        <id>maven-snapshots</id>
+        <id>maven-deploy</id>
       <url>http://192.168.32.10:8081/repository/maven-deploy/</url>
         </repository>
-
+<!--
 <snapshotRepository>
       <id>nexus-snapshots</id>
       <url>http://192.168.32.10:8081/nexus/content/repositories/snapshots</url>
   </snapshotRepository>
-    
+    -->
 </distributionManagement>
 	
     <repositories>
@@ -223,7 +223,7 @@
    </executions>
    <configuration>
       <serverId>nexus</serverId>
-      <nexusUrl>http://192.168.32.10:8081/nexus/</nexusUrl>
+      <nexusUrl>http://192.168.32.10:8081/repository/</nexusUrl>
       <skipStaging>true</skipStaging>
    </configuration>
 </plugin>	
