@@ -229,6 +229,7 @@
 </plugin>	
 		
 <!-- deploye -->
+<!--
 <plugin>
    <groupId>org.apache.maven.plugins</groupId>
    <artifactId>maven-deploy-plugin</artifactId>
@@ -237,6 +238,7 @@
       <skip>true</skip>
    </configuration>
    </plugin>
+-->
 		<!-- tomcat7 plugins -->
 		<plugin>
       <groupId>org.apache.tomcat.maven</groupId>
