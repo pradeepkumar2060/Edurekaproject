@@ -18,14 +18,14 @@
 <distributionManagement>
     <snapshotRepository>
       <id>nexus-snapshots</id>
-      <url>http://your-host:8081/repository/maven-snapshots/</url>
+      <url>http://192.168.32.10:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
-	<!--
+	
     <repository>
       <id>nexus-releases</id>
-      <url>http://your-host:8081/repository/maven-releases/</url>
+      <url>http://192.168.32.10:8081/repository/maven-releases/</url>
     </repository>
-    -->
+    
   </distributionManagement>
 	
     <repositories>
@@ -249,7 +249,7 @@
       </configuration>
     </plugin>
 </plugins>
-		<finalName>addressbook</finalName>
+<finalName>addressbook</finalName>
     </build>
 	
 	  
