@@ -215,7 +215,7 @@
    <configuration>
       <serverId>nexus</serverId>
       <nexusUrl>http://192.168.32.10:8081/repository/</nexusUrl>
-      <skipStaging>true</skipStaging>
+      <skipStaging>false</skipStaging>
    </configuration>
 </plugin>	
 		
