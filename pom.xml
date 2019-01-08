@@ -16,16 +16,18 @@
     </properties>
 	
 <distributionManagement>
+<!--
     <snapshotRepository>
       <id>nexus</id>
       <url>http://192.168.32.10:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
-<!--
+-->
+
     <repository>
       <id>nexus-releases</id>
       <url>http://192.168.32.10:8081/repository/maven-releases/</url>
     </repository>
-    -->
+   
   </distributionManagement>
 	
     <repositories>
@@ -206,7 +208,7 @@
 			</plugin>
 		  
 		<!-- nexus -->
-		
+	<!--	
 <plugin>
    <groupId>org.sonatype.plugins</groupId>
    <artifactId>nexus-staging-maven-plugin</artifactId>
@@ -218,17 +220,22 @@
       <skipStaging>false</skipStaging>
    </configuration>
 </plugin>	
-		
+		-->
 <!-- deploye -->
 
-<plugin>
-   <groupId>org.apache.maven.plugins</groupId>
+<<plugin>
    <artifactId>maven-deploy-plugin</artifactId>
-   <version>2.8</version>
-   <configuration>
-      <skip>true</skip>
-   </configuration>
-   </plugin>
+   <version>2.8.1</version>
+   <executions>
+      <execution>
+         <id>default-deploy</id>
+         <phase>deploy</phase>
+         <goals>
+            <goal>deploy</goal>
+         </goals>
+      </execution>
+   </executions>
+</plugin>
 
 		<!-- tomcat7 plugins -->
 		<plugin>
